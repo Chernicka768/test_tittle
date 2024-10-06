@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Горизонтальное выравнивание */
+    justify-content: center; /* Центрирование меню */
+    gap: 30px; /* Расстояние между элементами */
+}
+
+.menu li {
+    position: relative;
+    display: flex; /* Используем flex для вертикального выравнивания */
+    align-items: center; /* Центрируем элементы по вертикали */
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+/* Стилизуем первую букву */
+.menu a::first-letter {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+}
+
+/* Стили для квадрата */
+.square {
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    margin-left: 10px; /* Отступ от текста */
+}
+
+/* Меняем цвет текста при наведении */
+.menu a:hover {
+    color: blue;
+}
